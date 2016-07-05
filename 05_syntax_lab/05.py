@@ -6,11 +6,10 @@ until it finds a number that is divisable by: 7, 13 and 15
 # By Zvi Figov
 from random import randint
 
-flag_done = False
 
-while not flag_done:
+while True:
     num = randint(1,1000000)
     if num % 7 ==0 and num % 13 ==0 and num % 15 ==0:
-        flag_done = True
+        break
 print "Chosen number = %d" % num
 
