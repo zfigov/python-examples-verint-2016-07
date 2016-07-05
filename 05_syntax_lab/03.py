@@ -11,7 +11,8 @@ from random import randint
 num = randint(1,10000)
 numstr = str(num)
 acc = 0
-for n in range(0,len(numstr)):
-    acc = acc + int(numstr[n])
+for n in numstr:
+    acc = acc + int(n)
 print "The sum of the digits of the number %d is %d" % (num,acc)
+
 
