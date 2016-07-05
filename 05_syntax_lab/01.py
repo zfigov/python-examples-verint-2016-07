@@ -4,10 +4,13 @@ the user and prints the largest one
 """
 # Exercise 1
 # By Zvi Figov
-print "Enter 10 positive numbers" # Assuming positive numbers 
+import sys
+
+print "Enter 10 numbers" 
 largest = -1
 for i in range(1,11):
-    print "Enter number %d" % i
+    txtstr =  "Enter number %d : " % i
+    sys.stdout.write(txtstr)
     num = int(raw_input())
     largest = max(num,largest)
 
